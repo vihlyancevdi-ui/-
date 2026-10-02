@@ -1,0 +1,15 @@
+ШКОЛА БОЙЦА — БЫСТРЫЙ ДЕПЛОЙ НА RAILWAY
+
+1. Установите Railway CLI и войдите в аккаунт.
+2. В PowerShell откройте эту папку.
+3. Выполните: railway login
+4. Затем: railway init
+5. Затем: railway up
+6. В Railway откройте сервис → Settings → Networking → Generate Domain.
+
+ВАЖНО: в Variables добавьте ADMIN_PASSWORD со своим сильным паролем до первого публичного входа.
+
+Для сохранения базы данных: создайте Volume в Railway и подключите его к сервису с mount path /data.
+Затем добавьте переменную DATA_DIR=/data.
+
+После этого база data.sqlite, пользователи, штампы и результаты будут сохраняться между перезапусками.
